@@ -9,6 +9,7 @@ https://github.com/GrygorPavlenko/DataEngineering
 
 Установил _Git и Visual Studio Code_. Работа с командной строкой тяжело дается. Но файлы readme редактировать удобно. Осваиваю с помощью _markdown-it demo_.
 
+![Схема](https://github.com/GrygorPavlenko/DataEngineering/blob/main/DE-101/Module%2001/vsc.png?raw=true)
 
 ## 2) Архитектурно-аналитическое решение
 
@@ -67,12 +68,3 @@ _Задача: создать верхнеуровневую схему для �
 
 
 _Не судите строго!_
-
-
-
-git add .
-git commit -m "addad labs"
-git push
-
-git push --set-upstream origin vik/working
-git push
