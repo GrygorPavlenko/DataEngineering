@@ -75,5 +75,7 @@
  - Физическая модель
 ![Shem](https://github.com/GrygorPavlenko/DataEngineering/blob/f6238c41a6cf2109d790ac6e9fe80bdc08baf96e/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/shem.jpg)
 
-
+ - Перенос модели в базу данных. Наполнение базы данных.
+ Я решил по максимуму сохранить сгенерированный код из _SqlDBM_ без существенных правок.
+ 
 
