@@ -58,6 +58,22 @@
 	GROUP BY p.Person
 
 #### Индекс сезонности продаж
+	SELECT 
+		"Маржа_2018", "Маржа_2019",
+		round("Маржа_2019"-"Маржа_2018") as "Влияние в т.ч:",
+		round(("Кол_2019"-"Кол_2018")*("Маржа_2019"/"Маржа_2018")) as "объем",
+		round(("Дох_2019"/"Кол_2019"-"Дох_2018"/"Кол_2018")*"Кол_2019") as "цена",
+		round((("Дох_2019"/"Кол_2019"-"Маржа_2019"/"Кол_2019")-("Дох_2018"/"Кол_2018"-"Маржа_2018"/"Кол_2018"))*-Кол_2019) as "себестоимость"
+	FROM (
+		round(sum(case when extract('YEAR' from o.Ship_Date)=2018 then o.Profit end)) as "Маржа_2018", 
+		round(sum(case when extract('YEAR' from o.Ship_Date)=2019 then o.Profit end)) as "Маржа_2019", 
+		round(sum(case when extract('YEAR' from o.Ship_Date)=2018 then o.quantity end)) as "Кол_2018", 
+		round(sum(case when extract('YEAR' from o.Ship_Date)=2019 then o.quantity end)) as "Кол_2019",
+		round(sum(case when extract('YEAR' from o.Ship_Date)=2018 then o.sales end)) as "Дох_2018",
+		round(sum(case when extract('YEAR' from o.Ship_Date)=2019 then o.sales end)) as "Дох_2019"
+		FROM orders o)q
+		
+#### Факторный анализ прибыли
 	SELECT distinct
 		extract('MONTH' from o.Ship_Date) as "№",
 		to_char(o.Ship_Date,'Month') as "месяц",
@@ -66,7 +82,6 @@
 	FROM orders o
 	WHERE o.Ship_Date < '2019-12-31'
 	ORDER BY "№"
-#### Факторный анализ прибыли
 
 ## 2) Модель данных
 Для работы с моделью данных использовал _SqlDBM_. Сервис простой, разобраться не сложно.
