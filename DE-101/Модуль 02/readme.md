@@ -56,8 +56,16 @@
 	JOIN people p
 	        ON p.Region = o.Region
 	GROUP BY p.Person
-
 #### Индекс сезонности продаж
+	SELECT distinct
+		extract('MONTH' from o.Ship_Date) as "№",
+		to_char(o.Ship_Date,'Month') as "месяц",
+		round(sum(o.Quantity) over (partition by extract('MONTH' from o.Ship_Date))::numeric/
+		(sum(o.Quantity)over()/12),2) as "Индекс сезонности"
+	FROM orders o
+	WHERE o.Ship_Date < '2019-12-31'
+	ORDER BY "№"	
+#### Факторный анализ прибыли
 	SELECT 
 		"Маржа_2018", "Маржа_2019",
 		round("Маржа_2019"-"Маржа_2018") as "Влияние в т.ч:",
@@ -73,16 +81,6 @@
 		round(sum(case when extract('YEAR' from o.Ship_Date)=2019 then o.sales end)) as "Дох_2019"
 		FROM orders o)q
 		
-#### Факторный анализ прибыли
-	SELECT distinct
-		extract('MONTH' from o.Ship_Date) as "№",
-		to_char(o.Ship_Date,'Month') as "месяц",
-		round(sum(o.Quantity) over (partition by extract('MONTH' from o.Ship_Date))::numeric/
-		(sum(o.Quantity)over()/12),2) as "Индекс сезонности"
-	FROM orders o
-	WHERE o.Ship_Date < '2019-12-31'
-	ORDER BY "№"
-
 ## 2) Модель данных
 Для работы с моделью данных использовал _SqlDBM_. Сервис простой, разобраться не сложно.
  - Логическая модель данных
