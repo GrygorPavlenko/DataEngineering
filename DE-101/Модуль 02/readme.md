@@ -99,8 +99,8 @@
   Для удобства пользования в качестве сервиса визуализации данных использовался _Yandex DataLens_.
   Имея опыт работы с такими инструментами как _Power BI_ я немного разочарован возможностями и функционалом _Yandex DataLens_.
    - подключение к облачной БД _Superstore_
-   ![Shem]()
+   ![Shem](https://github.com/GrygorPavlenko/DataEngineering/blob/3200c373dcfc6c3a8d2e6ae7ba4fe234f05a5153/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/%D0%91%D0%94%20%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.jpg)
    - создание датасета
-   ![Shem]() 
+   ![Shem](https://github.com/GrygorPavlenko/DataEngineering/blob/3200c373dcfc6c3a8d2e6ae7ba4fe234f05a5153/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/%D0%91%D0%94%20%D0%B4%D0%B0%D1%82%D0%B0%D1%81%D0%B5%D1%82.jpg) 
    - создание чартов и дашборда
-   ![Shem]()
+   ![Shem](https://github.com/GrygorPavlenko/DataEngineering/blob/3200c373dcfc6c3a8d2e6ae7ba4fe234f05a5153/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/%D0%91%D0%94%20%D0%B4%D0%B0%D1%88%D0%B1.jpg)
