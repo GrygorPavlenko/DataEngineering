@@ -82,3 +82,8 @@
  
  Ну и проверочная выборка:
  ![Shem](https://github.com/GrygorPavlenko/DataEngineering/blob/0af5bfc35685437dd8289893d12fb24a881cf174/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0.jpg)
+ 
+ ## 3) Модель данных в облаке
+ 
+ В связи со сложившимися обстоятельствами доступ к облачным сервисам ограничен, поэтому наиболее простым решением есть _Yandex Cloud_.
+ ![Shem](https://github.com/GrygorPavlenko/DataEngineering/blob/5563924734d506a19bb728d37b1f67e0ed45c857/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/%D0%91%D0%94%20%D1%8F%D0%BD%D0%B4.jpg)
