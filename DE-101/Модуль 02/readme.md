@@ -78,7 +78,7 @@
  - Перенос модели в базу данных. Наполнение базы данных.
  
  Я решил по максимуму сохранить сгенерированный код из _SqlDBM_ без существенных правок. Кроме всего прочего при заполнении данными новой схемы _DW_ появлялась ошибка о несоответствии типов данных по полю _postal_code_. Пришлось изменить тип данных в исходной схеме _public_. Собственно сам файл с кодом:
- [link text](https://github.com/GrygorPavlenko/DataEngineering/blob/8aa855d7fe12e767821123ba5ed6ab542779ae09/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/DW.sql)
+ [схема DW](https://github.com/GrygorPavlenko/DataEngineering/blob/8aa855d7fe12e767821123ba5ed6ab542779ae09/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/DW.sql)
  
  Ну и проверочная выборка:
  ![Shem](https://github.com/GrygorPavlenko/DataEngineering/blob/0af5bfc35685437dd8289893d12fb24a881cf174/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0.jpg)
