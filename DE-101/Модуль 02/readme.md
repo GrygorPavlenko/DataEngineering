@@ -105,7 +105,7 @@
   ![Shem](https://github.com/GrygorPavlenko/DataEngineering/blob/6ce241846be768d9c8ef7e0c8c74999365e76f6f/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/%D0%91%D0%94%20%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.jpg)
  По сути процессов технология создания и наполнения БД в облаке _Yandex Cloud_ аналогична localhost. Заливаем исходные таблицы, создаем новую схему и наполняем ее.
  Проверочный результат базы данных в облаке:
-  ![Shem]()
+  ![Shem](https://github.com/GrygorPavlenko/DataEngineering/blob/bc8e1c7ad870ee0e26fdb54357ffb6f8d8264696/DE-101/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%2002/files/%D0%91%D0%94%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0.jpg)
  
   ## 4) Визуализация в облачном сервисе
   
